@@ -14,23 +14,23 @@ cat6 = Category.create(topic: "HTML", summary: "HTML5 is a markup language used 
 
 def make_users
     100.times do
-        User.create(username: Faker::Internet.username(specifier: 7..14), password_digest: Faker::Internet.password(min_length: 8), first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, bio: Faker::Lorem.paragraph(sentence_count: 2))
+        User.create(username: Faker::Twitter.screen_name, password_digest: Faker::Internet.password(min_length: 8), first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, bio: Faker::Lorem.paragraph(sentence_count: 2))
     end
 end
 
 
 def make_posts
     40.times do
-        Post.create(title: Faker::Hipster.sentence, content: Faker::Hipster.paragraphs(number: 1), user: User.all.sample, category: Category.all.sample, image_url: Faker::LoremPixel.image(size: "300x300"), status: "active")
+        Post.create(title: Faker::Hipster.sentence, content: Faker::Hipster.paragraph(sentence_count: rand(4..8)), user: User.all.sample, category: Category.all.sample, image_url: Faker::LoremPixel.image(size: "300x300"), status: "active")
     end
-    12.times do
-        Post.create(title: Faker::Hipster.sentence, content: Faker::Hipster.paragraphs(number: 1), user: User.all.sample, category: Category.all.sample, image_url: Faker::LoremPixel.image(size: "300x300"), status: "closed")
+    20.times do
+        Post.create(title: Faker::Hipster.sentence, content: Faker::Hipster.paragraph(sentence_count: rand(4..8)), user: User.all.sample, category: Category.all.sample, image_url: Faker::LoremPixel.image(size: "300x300"), status: "closed")
     end
 end
 
 def make_comments
     500.times do
-        Comment.create(user: User.all.sample, post: Post.all.sample, body: Faker::Lorem.paragraph(sentence_count: rand(1..8)))
+        Comment.create(user: User.all.sample, post: Post.all.sample, body: Faker::Hipster.paragraph(sentence_count: rand(1..4)))
     end
 end
 
