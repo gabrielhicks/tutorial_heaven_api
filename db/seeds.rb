@@ -13,24 +13,24 @@ cat5 = Category.create(topic: "JavaScript", summary: "JavaScript is a lightweigh
 cat6 = Category.create(topic: "HTML", summary: "HTML5 is a markup language used for structuring and presenting content on the World Wide Web.")
 
 def make_users
-    25.times do
+    100.times do
         User.create(username: Faker::Internet.username(specifier: 7..14), password_digest: Faker::Internet.password(min_length: 8), first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, bio: Faker::Lorem.paragraph(sentence_count: 2))
     end
 end
 
 
 def make_posts
-    25.times do
+    40.times do
         Post.create(title: Faker::Hipster.sentence, content: Faker::Hipster.paragraphs(number: 1), user: User.all.sample, category: Category.all.sample, image_url: Faker::LoremPixel.image(size: "300x300"), status: "active")
     end
-    7.times do
+    12.times do
         Post.create(title: Faker::Hipster.sentence, content: Faker::Hipster.paragraphs(number: 1), user: User.all.sample, category: Category.all.sample, image_url: Faker::LoremPixel.image(size: "300x300"), status: "closed")
     end
 end
 
 def make_comments
-    300.times do
-        Comment.create(user: User.all.sample, post: Post.all.sample, body: Faker::Lorem.paragraph(sentence_count: 2))
+    500.times do
+        Comment.create(user: User.all.sample, post: Post.all.sample, body: Faker::Lorem.paragraph(sentence_count: rand(1..8)))
     end
 end
 
