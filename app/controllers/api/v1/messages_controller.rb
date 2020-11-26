@@ -4,7 +4,7 @@ class Api::V1::MessagesController < ApplicationController
     def create
         message = Message.create(message_params)
         feed = message.category
-        ChatChannel.broadcast_to feed, message.content
+        ChatChannel.broadcast_to feed, MessageSerializer.new(message)
         render json: message
     end
 

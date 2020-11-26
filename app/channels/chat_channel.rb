@@ -1,11 +1,9 @@
 class ChatChannel < ApplicationCable::Channel
   def subscribed
-    puts "Hello World"
     # set user status to active when they subscribe to a channel
     # @current_user.update(is_active: true)
-
     # find a Feed instance using params from the subscription
-    feed = Category.find_by(id: params[:id])
+    feed = Category.find_by(topic: params[:category])
     
     # stream_for subscribes to only changes for this specific instance of a feed (instead of all feeds)
     # stream_from subscribes to changes for all feeds
@@ -13,7 +11,7 @@ class ChatChannel < ApplicationCable::Channel
     stream_for feed
 
     # broadcast_to sends a message to all subscribers for this channel
-    ChatChannel.broadcast_to feed, { type: "USER_CONNECTED" }
+    # ChatChannel.broadcast_to feed, { type: "USER_CONNECTED" }
   end
 
   def unsubscribed
