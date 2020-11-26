@@ -1,6 +1,6 @@
 class UserSerializer < ActiveModel::Serializer
   # skip_before_action :authorized
-  attributes :id, :username, :password
+  attributes :id, :username, :password, :is_active
   
   # , :email, :first_name, :last_name, :bio, :comments, :posts
   # def comments
