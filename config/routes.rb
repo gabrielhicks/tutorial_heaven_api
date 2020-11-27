@@ -10,5 +10,5 @@ Rails.application.routes.draw do
       get '/profile', to: 'users#profile'
     end
   end
-  mount ActionCable.server => "/chat"
+  mount ActionCable.server => "/cable"
 end
