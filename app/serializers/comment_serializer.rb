@@ -1,10 +1,10 @@
 class CommentSerializer < ActiveModel::Serializer
   # skip_before_action :authorized
-  attributes :id, :body
-  belongs_to :user, serializer: SenderSerializer
+  attributes :id, :body, :user
+  # belongs_to :user
 
-  # def user
-  #   ActiveModel::SerializableResource.new(object.user,  each_serializer: SenderSerializer)
-  # end
+  def user
+    ActiveModel::SerializableResource.new(object.user,  serializer: SenderSerializer)
+  end
 
 end
