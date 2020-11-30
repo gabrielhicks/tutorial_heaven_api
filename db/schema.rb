@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 2020_11_30_015800) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "image"
-    t.string "root"
+    t.string "root_url"
   end
 
   create_table "comments", force: :cascade do |t|

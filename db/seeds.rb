@@ -5,12 +5,12 @@ require 'faker'
 # User.destroy_all
 # Comment.destroy_all
 
-@react = Category.create(topic: "React", summary: "A JavaScript library for building user interfaces", root: "reactjs", image: "https://i.ibb.co/yY881s1/react.webp")
-@angular = Category.create(topic: "Angular", summary: "Superheroic JavaScript MVW Framework", root: "angular", image: "https://i.ibb.co/r2jh9YP/angular.webp")
-@vue = Category.create(topic: "Vue", summary: "The Progressive JavaScript Framework", root: "vue", image: "https://i.ibb.co/SVXP96Y/vue.webp")
-@rails = Category.create(topic: "Ruby on Rails", summary: "A web-application framework that includes everything needed to create MVC database-backed web applications", root: "rails", image: "https://i.ibb.co/3cXmQhY/ruby.webp")
-@js = Category.create(topic: "JavaScript", summary: "JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications.", root: "javascript", image: "https://i.ibb.co/pKCyJS6/JS.webp")
-@html = Category.create(topic: "HTML", summary: "HTML5 is a markup language used for structuring and presenting content on the World Wide Web.", root: "html5", image: "https://i.ibb.co/BqshWT1/html.webp")
+@react = Category.create(topic: "React", summary: "A JavaScript library for building user interfaces", root_url: "reactjs", image: "https://i.ibb.co/yY881s1/react.webp")
+@angular = Category.create(topic: "Angular", summary: "Superheroic JavaScript MVW Framework", root_url: "angular", image: "https://i.ibb.co/r2jh9YP/angular.webp")
+@vue = Category.create(topic: "Vue", summary: "The Progressive JavaScript Framework", root_url: "vue", image: "https://i.ibb.co/SVXP96Y/vue.webp")
+@rails = Category.create(topic: "Ruby on Rails", summary: "A web-application framework that includes everything needed to create MVC database-backed web applications", root_url: "rails", image: "https://i.ibb.co/3cXmQhY/ruby.webp")
+@js = Category.create(topic: "JavaScript", summary: "JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications.", root_url: "javascript", image: "https://i.ibb.co/pKCyJS6/JS.webp")
+@html = Category.create(topic: "HTML", summary: "HTML5 is a markup language used for structuring and presenting content on the World Wide Web.", root_url: "html5", image: "https://i.ibb.co/BqshWT1/html.webp")
 
 def make_users
 User.create(username: "aliang",
