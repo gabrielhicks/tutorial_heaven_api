@@ -15,7 +15,7 @@ class Api::V1::CategoriesController < ApplicationController
     def show
         @category = Category.find(params[:id])
 
-        render json: @category, serializer: CategorySerializer
+        render json: @category, each_serializer: CategorySerializer
     end
 
 private 

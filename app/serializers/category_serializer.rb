@@ -1,8 +1,7 @@
 class CategorySerializer < ActiveModel::Serializer
-  attributes :id, :topic, :summary
-  has_many :messages
+  attributes :id, :topic, :summary, :messages
 
-  # def posts
-  #   ActiveModel::SerializableResource.new(object.posts,  each_serializer: PostSerializer)
-  # end
+  def messages
+    ActiveModel::SerializableResource.new(object.messages,  each_serializer: MessageSerializer)
+  end
 end
