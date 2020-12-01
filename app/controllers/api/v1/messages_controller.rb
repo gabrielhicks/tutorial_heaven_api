@@ -15,9 +15,9 @@ class Api::V1::MessagesController < ApplicationController
     end
 
     def show
-        @message = Message.find(params[:id])
+        @category = Category.find(params[:id])
 
-        render json: @message, serializer: MessageSerializer
+        render json: @category, serializer: CategoryMessagesSerializer
     end
 
 private 

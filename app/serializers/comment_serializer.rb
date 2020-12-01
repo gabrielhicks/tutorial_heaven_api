@@ -4,7 +4,7 @@ class CommentSerializer < ActiveModel::Serializer
   # belongs_to :user
 
   def user
-    ActiveModel::SerializableResource.new(object.user,  serializer: SenderSerializer)
+    ActiveModelSerializers::SerializableResource.new(object.user,  serializer: SenderSerializer)
   end
 
 end

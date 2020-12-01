@@ -2,7 +2,7 @@ class ChatChannel < ApplicationCable::Channel
   def subscribed
     stop_all_streams
   
-    @category = Category.find_by(topic: params[:category])
+    @category = Category.find_by(id: params[:category])
 
     stream_for @category
 
