@@ -1,5 +1,5 @@
 class CategoryMessagesSerializer < ActiveModel::Serializer
-  attributes :id, :topic, :image
+  attributes :id, :topic, :image, :root_url
   has_many :messages
 #   def messages
 #     ActiveModelSerializers::SerializableResource.new(object.category,  serializer: MessageSerializer)
