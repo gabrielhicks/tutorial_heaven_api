@@ -12,6 +12,13 @@ class Api::V1::PostsController < ApplicationController
         # render json: posts, include: :price, except: [:updated_at, :created_at]
     end
 
+    def update
+        @post = Post.find(params[:id])
+        @post.update(post_params)
+
+        render json: @post, serializer: PostSerializer
+    end
+
     def show
         @post = Post.find(params[:id])
 
