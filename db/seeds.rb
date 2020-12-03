@@ -5,12 +5,12 @@ require 'faker'
 # User.destroy_all
 # Comment.destroy_all
 
-@react = Category.create(topic: "React", summary: "A JavaScript library for building user interfaces", root_url: "reactjs", image: "https://i.ibb.co/yY881s1/react.webp")
-@angular = Category.create(topic: "Angular", summary: "Superheroic JavaScript MVW Framework", root_url: "angular", image: "https://i.ibb.co/r2jh9YP/angular.webp")
-@vue = Category.create(topic: "Vue", summary: "The Progressive JavaScript Framework", root_url: "vue", image: "https://i.ibb.co/SVXP96Y/vue.webp")
-@rails = Category.create(topic: "Ruby on Rails", summary: "A web-application framework that includes everything needed to create MVC database-backed web applications", root_url: "rails", image: "https://i.ibb.co/3cXmQhY/ruby.webp")
-@js = Category.create(topic: "JavaScript", summary: "JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications.", root_url: "javascript", image: "https://i.ibb.co/pKCyJS6/JS.webp")
-@html = Category.create(topic: "HTML", summary: "HTML5 is a markup language used for structuring and presenting content on the World Wide Web.", root_url: "html5", image: "https://i.ibb.co/BqshWT1/html.webp")
+@react = Category.create(topic: "React", summary: "A JavaScript library for building user interfaces", root_url: "reactjs", image: "https://i.ibb.co/5vVZS3n/react.webp")
+@angular = Category.create(topic: "Angular", summary: "Superheroic JavaScript MVW Framework", root_url: "angular", image: "https://i.ibb.co/MPG2MJr/angular.webp")
+@vue = Category.create(topic: "Vue", summary: "The Progressive JavaScript Framework", root_url: "vue", image: "https://i.ibb.co/CBV6QkC/vue.webp")
+@rails = Category.create(topic: "Ruby on Rails", summary: "A web-application framework that includes everything needed to create MVC database-backed web applications", root_url: "rails", image: "https://i.ibb.co/x1v8PBP/ruby.webp")
+@js = Category.create(topic: "JavaScript", summary: "JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applications.", root_url: "javascript", image: "https://i.ibb.co/wRjQj2t/JS.webp")
+@html = Category.create(topic: "HTML", summary: "HTML5 is a markup language used for structuring and presenting content on the World Wide Web.", root_url: "html5", image: "https://i.ibb.co/myrrbFx/html.webp")
 
 def make_users
 User.create(username: "aliang",
@@ -19,7 +19,7 @@ User.create(username: "aliang",
             last_name: "Liang", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/7XFDcpN/cloud1.webp",
+            image: "https://i.ibb.co/T4q1LdD/cloud1.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U018WFKE859-f4d6f874dc57-512"
 )
 User.create(username: "asahli", 
@@ -28,7 +28,7 @@ User.create(username: "asahli",
             last_name: "Sahli", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/QXFf08G/cloud2.webp",
+            image: "https://i.ibb.co/xJbwB2R/cloud2.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U015ELC6K98-815088eadf16-512"
 )
 User.create(username: "ajavier", 
@@ -37,7 +37,7 @@ User.create(username: "ajavier",
             last_name: "Javier", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/qFwCF0y/cloud3.webp",
+            image: "https://i.ibb.co/VTsRD9n/cloud3.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U017Z2FEF2Q-73ffda054655-512"
 )
 User.create(username: "akhan", 
@@ -46,7 +46,7 @@ User.create(username: "akhan",
             last_name: "Khan", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/Jzz7h8h/cloud4.webp",
+            image: "https://i.ibb.co/mhSK8rM/cloud4.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U018W9HBSN6-0a35cc6e4e5a-512"
 )
 User.create(username: "aahmed", 
@@ -55,7 +55,7 @@ User.create(username: "aahmed",
             last_name: "Ahmed", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/dBpfmpf/cloud5.webp",
+            image: "https://i.ibb.co/QKM5kZ9/cloud5.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U0185FC878R-e3fc06014db5-512"
 )
 User.create(username: "abuhler", 
@@ -64,7 +64,7 @@ User.create(username: "abuhler",
             last_name: "Buhler", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/7XFDcpN/cloud1.webp",
+            image: "https://i.ibb.co/T4q1LdD/cloud1.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019CV1P71Q-c60ba813030f-512"
 )
 User.create(username: "bvicente", 
@@ -73,7 +73,7 @@ User.create(username: "bvicente",
             last_name: "Vicente", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/QXFf08G/cloud2.webp",
+            image: "https://i.ibb.co/xJbwB2R/cloud2.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019BJ3UY5B-d57d19806fbb-512"
 )
 User.create(username: "bknowles", 
@@ -82,7 +82,7 @@ User.create(username: "bknowles",
             last_name: "Knowles", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/qFwCF0y/cloud3.webp",
+            image: "https://i.ibb.co/VTsRD9n/cloud3.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019BJ3Q405-29cfa30d7174-512"
 )
 User.create(username: "cchang", 
@@ -91,7 +91,7 @@ User.create(username: "cchang",
             last_name: "Chang", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/Jzz7h8h/cloud4.webp",
+            image: "https://i.ibb.co/mhSK8rM/cloud4.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019BJ47L0M-3a797f766b6d-512"
 )
 User.create(username: "dkim", 
@@ -100,7 +100,7 @@ User.create(username: "dkim",
             last_name: "Kim", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/dBpfmpf/cloud5.webp",
+            image: "https://i.ibb.co/QKM5kZ9/cloud5.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U016ZNR6TG9-b8578c325fde-512"
 )
 User.create(username: "egao", 
@@ -109,7 +109,7 @@ User.create(username: "egao",
             last_name: "Gao", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/7XFDcpN/cloud1.webp",
+            image: "https://i.ibb.co/T4q1LdD/cloud1.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019CV1UHTL-eb7feefb30a9-512"
 )
 User.create(username: "gmistretta", 
@@ -118,7 +118,7 @@ User.create(username: "gmistretta",
             last_name: "Mistretta", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/QXFf08G/cloud2.webp",
+            image: "https://i.ibb.co/xJbwB2R/cloud2.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019RH4UBB3-fd733d85af52-512"
 )
 User.create(username: "ghicks", 
@@ -127,7 +127,7 @@ User.create(username: "ghicks",
             last_name: "Hicks", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/qFwCF0y/cloud3.webp",
+            image: "https://i.ibb.co/VTsRD9n/cloud3.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U0192EZ98VA-4e8731033c6a-512"
 )
 User.create(username: "iseara", 
@@ -136,7 +136,7 @@ User.create(username: "iseara",
             last_name: "Seara", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/Jzz7h8h/cloud4.webp",
+            image: "https://i.ibb.co/mhSK8rM/cloud4.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U015ELC45U2-2822d2f7bb30-512"
 )
 User.create(username: "jfromm", 
@@ -145,7 +145,7 @@ User.create(username: "jfromm",
             last_name: "Fromm", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/dBpfmpf/cloud5.webp",
+            image: "https://i.ibb.co/QKM5kZ9/cloud5.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U018FH2KWR5-138d4e181585-512"
 )
 User.create(username: "jchilcott", 
@@ -154,7 +154,7 @@ User.create(username: "jchilcott",
             last_name: "Chilcott", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/7XFDcpN/cloud1.webp",
+            image: "https://i.ibb.co/T4q1LdD/cloud1.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019CV20DAN-e38a6f7e3ba8-512"
 )
 User.create(username: "jdbh", 
@@ -163,7 +163,7 @@ User.create(username: "jdbh",
             last_name: "Brewer-Hofmann", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/QXFf08G/cloud2.webp",
+            image: "https://i.ibb.co/xJbwB2R/cloud2.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019BJ3SNFP-04f7f8556f9b-512"
 )
 User.create(username: "jslabs", 
@@ -172,7 +172,7 @@ User.create(username: "jslabs",
             last_name: "Salbert", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/qFwCF0y/cloud3.webp",
+            image: "https://i.ibb.co/VTsRD9n/cloud3.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U01984U8YTD-657bdc3bf629-512"
 )
 User.create(username: "jgonzales", 
@@ -181,7 +181,7 @@ User.create(username: "jgonzales",
             last_name: "Gonzalez", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/Jzz7h8h/cloud4.webp",
+            image: "https://i.ibb.co/mhSK8rM/cloud4.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019CV1LK3L-c0e3da1adb78-512"
 )
 User.create(username: "mstalter", 
@@ -190,7 +190,7 @@ User.create(username: "mstalter",
             last_name: "Stalter", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/dBpfmpf/cloud5.webp",
+            image: "https://i.ibb.co/QKM5kZ9/cloud5.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U017RFF8KEH-06eb9f51b57b-512"
 )
 User.create(username: "mhawary", 
@@ -199,7 +199,7 @@ User.create(username: "mhawary",
             last_name: "Hawary", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/7XFDcpN/cloud1.webp",
+            image: "https://i.ibb.co/T4q1LdD/cloud1.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U018WFK4U67-6706d66f5365-512"
 )
 User.create(username: "mbarry", 
@@ -208,7 +208,7 @@ User.create(username: "mbarry",
             last_name: "Barry", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/QXFf08G/cloud2.webp",
+            image: "https://i.ibb.co/xJbwB2R/cloud2.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U01A2QBELFJ-7e5e520c6662-512"
 )
 User.create(username: "mushfi", 
@@ -217,7 +217,7 @@ User.create(username: "mushfi",
             last_name: "Chowdhury", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/qFwCF0y/cloud3.webp",
+            image: "https://i.ibb.co/VTsRD9n/cloud3.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U016MAHMLEP-9841a14e48b7-512"
 )
 User.create(username: "nho", 
@@ -226,7 +226,7 @@ User.create(username: "nho",
             last_name: "Ho", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/Jzz7h8h/cloud4.webp",
+            image: "https://i.ibb.co/mhSK8rM/cloud4.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U018W9H4274-4aba39e6e23b-512"
 )
 User.create(username: "sdboahen", 
@@ -235,7 +235,7 @@ User.create(username: "sdboahen",
             last_name: "D.Boahen", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/dBpfmpf/cloud5.webp",
+            image: "https://i.ibb.co/QKM5kZ9/cloud5.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U018W9H54N6-6bb69b64ec24-512"
 )
 User.create(username: "sdonohue", 
@@ -244,7 +244,7 @@ User.create(username: "sdonohue",
             last_name: "Donohue", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/7XFDcpN/cloud1.webp",
+            image: "https://i.ibb.co/T4q1LdD/cloud1.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U0192EZBGGL-0c74805166ca-512"
 )
 User.create(username: "slaflam", 
@@ -253,7 +253,7 @@ User.create(username: "slaflam",
             last_name: "LaFlam", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/QXFf08G/cloud2.webp",
+            image: "https://i.ibb.co/xJbwB2R/cloud2.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019BJ3TUUD-c25706cae604-512"
 )
 User.create(username: "skanagui", 
@@ -262,7 +262,7 @@ User.create(username: "skanagui",
             last_name: "Kanagui", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/qFwCF0y/cloud3.webp",
+            image: "https://i.ibb.co/VTsRD9n/cloud3.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019BJ3MBMK-d0154273a634-512"
 )
 User.create(username: "sgolbabae", 
@@ -271,7 +271,7 @@ User.create(username: "sgolbabae",
             last_name: "Golbabae", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/Jzz7h8h/cloud4.webp",
+            image: "https://i.ibb.co/mhSK8rM/cloud4.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U017T310Q8K-4615a65e9cec-512"
 )
 User.create(username: "zliu", 
@@ -280,7 +280,7 @@ User.create(username: "zliu",
             last_name: "Liu", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/dBpfmpf/cloud5.webp",
+            image: "https://i.ibb.co/QKM5kZ9/cloud5.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U019BJ3RBL5-203ac12b33b6-512"
 )
 User.create(username: "spadden", 
@@ -289,7 +289,7 @@ User.create(username: "spadden",
             last_name: "Padden", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/7XFDcpN/cloud1.webp",
+            image: "https://i.ibb.co/T4q1LdD/cloud1.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-UJW55RH1R-95bb92aacdc8-512"
 )
 User.create(username: "hasihasi", 
@@ -298,7 +298,7 @@ User.create(username: "hasihasi",
             last_name: "Chowdhury", 
             email: Faker::Internet.email, 
             bio: Faker::Hipster.paragraph(sentence_count: 4),
-            image: "https://i.ibb.co/QXFf08G/cloud2.webp",
+            image: "https://i.ibb.co/xJbwB2R/cloud2.webp",
             profile: "https://ca.slack-edge.com/T02MD9XTF-U01CRNE8X3M-0cc327fd8ec0-512"
 )
 end
